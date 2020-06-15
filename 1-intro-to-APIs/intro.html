@@ -1,0 +1,55 @@
+<!--JSON -> JavaScript Object Notation-->
+<!--A superhero's profile in JSON-->
+{
+    name: "Superman",  <!--in Javascript, this would be { name: "Superman" }-->
+    "age": 79,
+    "secretIdentity": "Clark Kent",
+    "powers": [
+        "Super strength",
+        "Heat vision",
+        "Flight",
+        "X-ray Vision",
+        "Super speed"]
+}
+
+<!--Minifying is removing all the extra white space in your code to make file size smaller... you are able to do this in JSON-->
+
+<!--API ENDPOINTS!
+API endpoints : the url that the client application uses to communicate with your server
+-->
+<!--SERVER
+could mean:
+- the software used to host/deliver web pages
+- the hardware that runs said software
+- both the software and hardware working in tandem
+-->
+<!--RESPONSE
+HTTP response : 
+- 1XX - informational (request recieved, continuing process)
+- 2XX - success (action was successfully received, understood and accepted)
+- 3XX - redirection (further action must be taken in order to complete the request)
+- 4XX - client error (the request contains bad syntax or cannot be fulfilled)
+- 5XX - server error (the server failed to fulfill an apparently valid request)
+-->
+<!--STATELESSNESS
+    Stateless language : the server does not store any data from the request  
+    Stateless : no client context is stored server-side in between requests, 
+    all information needed for each request has to be given each time by the client.
+-->
+<!--REST
+REST : Representational State Transfer
+Rules of REST: 
+- Client and server are separate
+- stateless
+- cacheable: responses from the server have to let the client know if they are cacheable
+- layered system: can have an intermediary server to improve load balances and speed
+- code on demand: optional, ability to pass code from server to client, to allow the client to run it
+- uniform interface: fundamental to REST
+    + identification of resources - all resources ahve an identifier, a separate way of conceptualizing those 
+    resources, that are not simply the resource themselves
+    + self-descriptive messages: each message includes enough info to know what to do with it, 
+    without needing any other outside info
+    + resource manifulation through representations: the client has enough info to edit and delete the resource
+
+    #RESTful design
+-->
